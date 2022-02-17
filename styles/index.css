@@ -1,0 +1,48 @@
+#Logo                            /* styling code for logo in the header*/
+{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+
+#Delhi
+{
+    height: 180px;
+    width: 200px;
+}
+
+#Goa
+{
+    height: 180px;
+    width: 200px;
+}
+
+#Hyderabad
+{
+    height: 180px;
+    width: 200px;
+}
+
+#kolkata
+{
+    height: 180px;
+    width: 200px;
+}
+#facebook
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+#instagram
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+#twitter
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
