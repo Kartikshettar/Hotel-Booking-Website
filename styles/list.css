@@ -21,3 +21,23 @@
     height: 300px;
     width: 400px;
 }
+
+#HotelList
+{
+    display: none;
+
+}
+#MapView
+{
+    display: none;
+    
+}
+#textButton{
+    background:none; 
+    border:none;     
+}
+#textButton1
+{
+    background:none; 
+    border:none;     
+}

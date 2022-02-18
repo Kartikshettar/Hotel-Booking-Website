@@ -27,21 +27,27 @@
                           <h5 class="modal-title" id="modal-header">Welcome Back</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+
+
+                        <div id="login-error-msg-holder">
+                          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                        </div>
+                        
                         <div class="modal-body">
-                          <form>
+                          <form  id="login-form">
                             <div class="mb-3">
-                              <label for="example-input-email" class="form-label" >Email address</label >
-                              <input type="email"  class="form-control" id="example-input-email"  aria-describedby="emailHelp" placeholder="Enter email"/>
+                              <label for="example-input-email" class="form-label" >Email</label >
+                              <input type="email" name="Email" class="form-control" id="example-input-email"  aria-describedby="emailHelp" placeholder="Enter email"/>
                             </div>
                             <div class="mb-3">
                               <label for="example-input-password" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="example-input-password" placeholder="Password" />
+                              <input type="password" name="password" class="form-control" id="example-input-password" placeholder="Password" />
                             </div>
                             <div class="mb-3 form-check">
                               <input type="checkbox"  class="form-check-input"  id="example-check"/>
                               <label class="form-check-label" for="example-check" >Remember Me</label >
                             </div>
-                            <button type="button" class="btn btn-primary">Sign In</button>
+                            <button type="submit" class="btn btn-primary" id="login-form-submit">Sign In</button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" > Close </button>
                           </form>
                         </div>
@@ -137,6 +143,13 @@
        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
        crossorigin="anonymous"
      ></script>
+     <script src="index.js" >
+       
+     </script>
+     <script src="index.js" >
+       
+    </script>
+
    </body>
   </html>
   

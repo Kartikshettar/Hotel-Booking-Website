@@ -12,46 +12,52 @@
 </head>
 
  <body>
-     <div id="main_container">    <!---Main container wraps all the div inside it  --->
-        <div id="header">          
-         <!---Header consist of logo  --->
-                         <header>
-                            <a href="index.html"> <img src="assests\images\logo.png" id="Logo" alt="logo"></a>   <!--Image to show as logo in header-->
-         
-                             <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#example-modal" id="sign-in-button" > Sign In </button>
-         
-         
-                             <div class="modal fade" id="example-modal"  tabindex="-1" aria-labelledby="modal-header"  aria-hidden="true">
-                             <div class="modal-dialog">
-                               <div class="modal-content">
-                                 <div class="modal-header">
-                                   <h5 class="modal-title" id="modal-header">Welcome Back</h5>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                 </div>
-                                 <div class="modal-body">
-                                   <form>
-                                     <div class="mb-3">
-                                       <label for="example-input-email" class="form-label" >Email address</label >
-                                       <input type="email"  class="form-control" id="example-input-email"  aria-describedby="emailHelp" placeholder="Enter email"/>
-                                     </div>
-                                     <div class="mb-3">
-                                       <label for="example-input-password" class="form-label">Password</label>
-                                       <input type="password" class="form-control" id="example-input-password" placeholder="Password" />
-                                     </div>
-                                     <div class="mb-3 form-check">
-                                       <input type="checkbox"  class="form-check-input"  id="example-check"/>
-                                       <label class="form-check-label" for="example-check" >Remember Me</label >
-                                     </div>
-                                     <button type="button" class="btn btn-primary">Sign In</button>
-                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" > Close </button>
-                                   </form>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                               
-                         </header>
+  <div id="main_container">    <!---Main container wraps all the div inside it  --->
+    <div id="header">           <!---Header consist of logo  --->
+         <header>
+            <a href="index.html"> <img src="assests\images\logo.png" id="Logo" alt="logo"></a>   <!--Image to show as logo in header-->
+
+             <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#example-modal" id="sign-in-button" > Sign In </button>
+
+
+             <div class="modal fade" id="example-modal"  tabindex="-1" aria-labelledby="modal-header"  aria-hidden="true">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="modal-header">Welcome Back</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+
+
+                 <div id="login-error-msg-holder">
+                   <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                 </div>
+                 
+                 <div class="modal-body">
+                   <form  id="login-form">
+                     <div class="mb-3">
+                       <label for="example-input-email" class="form-label" >Email</label >
+                       <input type="email" name="Email" class="form-control" id="example-input-email"  aria-describedby="emailHelp" placeholder="Enter email"/>
                      </div>
+                     <div class="mb-3">
+                       <label for="example-input-password" class="form-label">Password</label>
+                       <input type="password" name="password" class="form-control" id="example-input-password" placeholder="Password" />
+                     </div>
+                     <div class="mb-3 form-check">
+                       <input type="checkbox"  class="form-check-input"  id="example-check"/>
+                       <label class="form-check-label" for="example-check" >Remember Me</label >
+                     </div>
+                     <button type="submit" class="btn btn-primary" id="login-form-submit">Sign In</button>
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" > Close </button>
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+               
+         </header>
+     </div>
+
          
 
         <div id="Hotel_details">
@@ -200,6 +206,9 @@
    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
    crossorigin="anonymous"
  ></script>
+ <script src="index.js" >
+       
+</script>
 </body>
 </html>
 
