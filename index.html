@@ -12,89 +12,100 @@
   </head>
 
    <body>
-       <div id="main_container">    <!---Main container wraps all the div inside it  --->
-           <div id="header">           <!---Header consist of logo  --->
-                <header>
-                   <a href="index.html"> <img src="assests\images\logo.png" id="Logo" alt="logo"></a>   <!--Image to show as logo in header-->
-
-                    <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#example-modal" id="sign-in-button" > Sign In </button>
-
-
-                    <div class="modal fade" id="example-modal"  tabindex="-1" aria-labelledby="modal-header"  aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="modal-header">Welcome Back</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+    <div id="main_container">    <!---Main container wraps all the div inside it  --->
+      <div id="header">          <!---Header consist of logo  --->
+       
+           <header>
+             
+              <a href="index.html"> <img src="assests\images\logo.png" id="Logo" alt="logo"></a>   <!--Image to show as logo in header-->
+<div class="right">
+              <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#example-modal" id="sign-in-button" > Sign In </button>
 
 
-                        <div id="login-error-msg-holder">
-                          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-                        </div>
-                        
-                        <div class="modal-body">
-                          <form  id="login-form">
-                            <div class="mb-3">
-                              <label for="example-input-email" class="form-label" >Email</label >
-                              <input type="email" name="Email" class="form-control" id="example-input-email"  aria-describedby="emailHelp" placeholder="Enter email"/>
-                            </div>
-                            <div class="mb-3">
-                              <label for="example-input-password" class="form-label">Password</label>
-                              <input type="password" name="password" class="form-control" id="example-input-password" placeholder="Password" />
-                            </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox"  class="form-check-input"  id="example-check"/>
-                              <label class="form-check-label" for="example-check" >Remember Me</label >
-                            </div>
-                            <button type="submit" class="btn btn-primary" id="login-form-submit">Sign In</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" > Close </button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                      
-                </header>
+               <div class="modal fade" id="example-modal"  tabindex="-1" aria-labelledby="modal-header"  aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="modal-header">Welcome Back</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+
+
+                   <div id="login-error-msg-holder">
+                     <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                   </div>
+                   
+                   <div class="modal-body">
+                     <form  id="login-form">
+                       <div class="mb-3">
+                         <label for="example-input-email" class="form-label" >Email</label >
+                         <input type="email" name="Email" class="form-control" id="example-input-email"  aria-describedby="emailHelp" placeholder="Enter email"/>
+                       </div>
+                       <div class="mb-3">
+                         <label for="example-input-password" class="form-label">Password</label>
+                         <input type="password" name="password" class="form-control" id="example-input-password" placeholder="Password" />
+                       </div>
+                       <div class="mb-3 form-check">
+                         <input type="checkbox"  class="form-check-input"  id="example-check"/>
+                         <label class="form-check-label" for="example-check" >Remember Me</label >
+                       </div>
+                       <button type="submit" class="btn btn-primary" id="login-form-submit">Sign In</button>
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" > Close </button>
+                     </form>
+                   </div>
+                 </div>
+               </div>
+             </div>
             </div>
+            
+            
+           </header>
+          
+       </div>
+       
 
-
-            <div class="Search">                <!--Search Bar section -->
-                
-                    <nav class="navbar navbar-light bg-light">
+            <div class="Search" >                <!--Search Bar section -->
+              
+                    <nav>
                         <div class="container-fluid">
                           <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input class="form-control me-2" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+                            <button class="p-sm-2 mb-2 bg-success text-dark " type="submit">Search</button>
                           </form>
                         </div>
                       </nav>
+                   
                 
             </div>
 
-            <div id="cards">              <!--Container to display the cards contains different images of destination -->
+            <div class="outer-grid">              <!--Container to display the cards contains different images of destination -->
                 <nav>
+                  
                     
-                    <a href="list.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" id="Delhi" alt="Delhi"></a>
+                   <div class="grid"> 
+                     <a href="list.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" id="Delhi" alt="Delhi"></a>
                     
                     
-                    <a href="list.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="Goa" alt="Goa"></a>
+                   <a href="list.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="Goa" alt="Goa"></a>
 
-                    <a href="list.html">   <img src ="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" id="Hyderabad" alt="Hyderabad"></a>
+                  <a href="list.html">   <img src ="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" id="Hyderabad" alt="Hyderabad"></a>
                         
-                    <a href="list.html">   <img src ="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" id="kolkata" alt="kolkata"></a>
+                   <a href="list.html">   <img src ="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" id="kolkata" alt="kolkata"></a>
+                   
 
-                        <div id="more_cards">
-                            <a href="index.html">View More>></a>
-                        </div>
+                      </div>
+                      
 
                 </nav>
+                <div id="more_cards">
+                  <a href="index.html">View More>></a>
+              </div>
             </div>
 
 
-            <div id="Footer">
+            <div id="Footer" >
                 <footer>
-                    <div id="contact_us">
+                    
 
                         <button type="button"  class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#example-modal" id="sign-in-button" > contact_us </button>
                       <div class="modal fade" id="example-modal"  tabindex="-1" aria-labelledby="modal-header"  aria-hidden="true">
@@ -113,7 +124,7 @@
                       <div class="form-floating" >
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                         <label for="floatingTextarea">Feedback</label>
-                      </div><br/>
+                      </div>
                       <div class="modal-footer">
                       <button type="button" class="btn btn-primary">Submit</button>
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >  Close </button>
@@ -123,18 +134,19 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
+          
               
 
 
 
 
-                    <div id="Social_Media">
+                     <div id="Social_Media">
                      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\facebook.png"  id="facebook"></a>
                      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\instagram.png"  id="instagram"></a>
                      <a href="https://twitter.com"  target="_blank" rel="noopener noreferrer"> <img src="assests\images\twitter.png"   id="twitter"></a>
                     </div>
-                    <div><p> C 2020 Hotel Booking PVT LTD.</p></div>
+                    <div id="phrase"><p> C 2020 Hotel Booking PVT LTD.</p></div>
                 </footer>
             </div>
        </div>
@@ -143,13 +155,6 @@
        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
        crossorigin="anonymous"
      ></script>
-     <script src="index.js" >
-       
-     </script>
-     <script src="index.js" >
-       
-    </script>
-
    </body>
   </html>
   

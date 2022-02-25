@@ -1,43 +1,54 @@
+
+
+
+#Views
+{
+    margin: 2%;
+    justify-content: space-between;
+}
+body{
+    margin: 0%;
+    background-color: #e0e0e0;
+}
+
+
+
+
 #hotel1
 {
-    height: 300px;
-    width: 400px;
+    background-color: rgb(132,136,139);
+    margin: 2%;
+    width: 40%;
 }
 
 #hotel2
 {
-    height: 300px;
-    width: 400px;
+    background-color: rgb(132,136,139);
+    margin: 2%;
+    width: 40%;
 }
-
 #hotel3
 {
-    height: 300px;
-    width: 400px;
+    background-color: rgb(132,136,139);
+    margin: 2%;
+    width: 40%;
 }
 
-#map
+#hotelImg1
 {
-    height: 300px;
-    width: 400px;
-}
-
-#HotelList
-{
-    display: none;
+    border-radius: 0;
+    width: 350px;
 
 }
-#MapView
+#hotelIMG2
 {
-    display: none;
-    
+    border-radius: 0;
+    width: 350px;
+
 }
-#textButton{
-    background:none; 
-    border:none;     
-}
-#textButton1
+#hotelIMg3
 {
-    background:none; 
-    border:none;     
+    border-radius: 0;
+    width: 350px;
+
 }

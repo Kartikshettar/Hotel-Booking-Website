@@ -1,5 +1,44 @@
-#hote1{
-    height: 500px;
-    width: 500px;
-    
+
+body{
+    margin: 0%;
+    background-color: #e0e0e0;
 }
+
+#hotel1
+{
+    height: 500px;
+    width: 400px;
+    border-radius:0 ;
+
+}
+#booking
+{
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 4%;
+}
+#HotelR
+{
+   
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 0;
+
+
+}
+#discription
+{
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+
+}
+
+
+
+
+
+
+
+

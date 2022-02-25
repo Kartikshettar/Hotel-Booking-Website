@@ -1,51 +1,47 @@
+body
+{
+    margin: 0;
+    background-color:  #e0e0e0;
+    
+}
+
+
 #Logo                            /* styling code for logo in the header*/
 {
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
+    float: left;
 }
 
-#Delhi
+.right
 {
-    height: 180px;
-    width: 200px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-#Goa
-{
-    height: 180px;
-    width: 200px;
-}
 
-#Hyderabad
-{
-    height: 180px;
-    width: 200px;
-}
 
-#kolkata
-{
-    height: 180px;
-    width: 200px;
-}
 #facebook
 {
-    height: 20px;
-    width: 22px;
+    height: 30px;
+    width: 32px;
     border-radius: 50%;
 }
 #instagram
 {
-    height: 20px;
-    width: 22px;
+    height: 30px;
+    width: 32px;
     border-radius: 50%;
 }
 #twitter
 {
-    height: 20px;
-    width: 22px;
+    height: 35px;
+    width: 37px;
     border-radius: 50%;
 }
+/*
 #login-error-msg {
     width: 23%;
     text-align: center;
@@ -58,3 +54,159 @@
     background-color: #e58f8f;
     opacity: 0;
   }
+  */
+  #header
+  {
+    display: block;
+      background-color: #8a0000;
+      height: 70px;
+  }
+ 
+
+
+  .Search
+{
+
+    height: 380px;
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+#searchbar
+{
+    width: 250px;
+    height: 55px;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+
+
+}
+
+
+.grid img
+{
+      
+    margin-top: 15%;
+    margin-left: 125%;
+    margin-right: 15%;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    padding: 4%;
+    
+
+     height: 200px;
+     width: 200px;
+     border-radius: 25px;
+     
+ 
+    
+   
+}
+
+
+
+
+
+
+#phrase
+{
+   
+   text-align: center;
+   font-weight: bold ;
+   padding-bottom: 1px;
+   
+}
+
+#contact_us
+{
+   float: left;
+    margin-left: 5px;
+    margin-top:0 ;
+    
+
+}
+
+footer 
+{
+    display: block;
+    background-color: #8a0000;
+   
+    
+  }
+
+  #Social_Media
+  {
+      float: right;
+  }
+
+
+/*
+#Goa
+{
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+#Hyderabad
+{
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+}
+#kolkata
+{
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+
+ display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    grid: 750px/ auto auto auto;
+
+
+   
+     margin-top: 19%;
+    margin-left: 60%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+
+
+
+
+      #Footer
+  {
+      
+    
+      background-color: #8a0000;
+      
+  }
+      footer {
+    display: block;
+    background-color: #8a0000;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid white;
+    text-align: center;
+  }
+*/

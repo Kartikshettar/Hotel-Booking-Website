@@ -1,3 +1,38 @@
-#Payment{
+body{
+    margin: 0;
+    background-color: #e0e0e0;
     
+
+}
+
+#hotelDec
+{
+    background-color: rgb(132,136,139);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+    height: 20%;
+    margin-left: 20%;
+
+    
+}
+
+#hotel1
+{
+    height: 500px;
+    width: 400px;
+}
+
+#payInfo
+{
+    margin-left: 20px;
+
+}
+
+#payDec
+{
+    border:1px solid #000;
+    border-radius: 10px;
+    margin: 2%;
+    padding:1% 2% ;
 }
