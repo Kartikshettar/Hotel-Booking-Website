@@ -1,3 +1,344 @@
-.common{
-    
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
+
+/* Set a style for all buttons */
+.button1 {
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #2ecc71;
+  border: none;
+  border-bottom: 5px solid #27ae60;
+  text-shadow: 0px -2px #27ae60;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  }
+
+  .button1:hover, button1:active {
+    -webkit-transform: translate(0px,5px);
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #2ecc71;
+  }
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+    height: 10vh;
+    width: 10vh;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+#phrase
+{
+   
+   text-align: center;
+   font-weight: bold ;
+   padding-bottom: 1px;
+   
+}
+
+#contact_us
+{
+   float: left;
+    margin-left: 5px;
+    margin-top:0 ;
+    
+
+}
+
+
+  #Social_Media
+  {
+      float: right;
+      margin-top: 10px;
+      margin-right: 5px;
+  }
+
+
+
+
+  
+#facebook
+{
+    height: 30px;
+    width: 32px;
+    border-radius: 50%;
+}
+#instagram
+{
+    height: 30px;
+    width: 32px;
+    border-radius: 50%;
+}
+#twitter
+{
+    height: 35px;
+    width: 37px;
+    border-radius: 50%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+
+
+#Logo                            /* styling code for logo in the header*/
+{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    float: left;
+}
+
+
+.main_div {
+  --color: #3992e6;
+  position: relative;
+  z-index: 1;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+ }
+ 
+ .main_div::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  top: -7px;
+  left: -7px;
+  z-index: -5;
+  border-top: 3px solid var(--color);
+  border-left: 3px solid var(--color);
+  transition: 0.5s;
+ }
+ 
+ .main_div::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  bottom: -7px;
+  right: -7px;
+  z-index: -5;
+  border-right: 3px solid var(--color);
+  border-bottom: 3px solid var(--color);
+  transition: 0.5s;
+ }
+ 
+ .main_div:hover::before {
+  width: 100%;
+  height: 100%;
+ }
+ 
+ .main_div:hover::after {
+  width: 100%;
+  height: 100%;
+ }
+ 
+ .main_div button {
+  padding: 0.7em 2em;
+  font-size: 16px;
+  background: #222222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+ }
+body{        
+    margin: 0;
+    background-color:  #e0e0e0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #8a0000;
+   /* padding: 10px 0;*/
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+
+
+
+
+
+.button3 {
+  margin-top: 10px;
+  margin-left: 5px;
+position: relative;
+height: 40px;
+color: #e8e8e8;
+padding: 0 30px;
+border: 3px solid #e8e8e8;
+background: #000;
+user-select: none;
+white-space: nowrap;
+transition: all .05s linear;
+font-family: inherit;
+}
+.button3:before, .button3:after {
+content: "";
+position: absolute;
+background: #000;
+transition: all .2s linear;
+}
+
+.button3:before {
+width: calc(100% + 6px);
+height: calc(100% - 16px);
+top: 8px;
+left: -3px;
+}
+
+.button3:after {
+width: calc(100% - 16px);
+height: calc(100% + 6px);
+top: -3px;
+left: 8px;
+}
+
+.button3:hover {
+cursor: crosshair;
+}
+
+.button3:active {
+transform: scale(0.95);
+}
+
+.button3:hover:before {
+height: calc(100% - 32px);
+top: 16px;
+}
+
+.button3:hover:after {
+width: calc(100% - 32px);
+left: 16px;
+}
+
+.button3 span {
+font-size: 15px;
+z-index: 3;
+position: relative;
+font-weight: 600;
+}
+

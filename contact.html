@@ -1,8 +1,138 @@
-<div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link href="styles\index.css" rel="stylesheet" />
+<link href="styles\common.css" rel="stylesheet" />
+
+    <title>Contact Form #6</title>
+  </head>
+  <body>
+
+    <div class="fixed-header">
+        <div class="container">
+          
+             
+          <a href="index.html"> <img src="assests\images\logo.png" id="Logo" alt="logo"></a>   <!--Image to show as logo in header-->
+    
+                      
+        </div>
+    </div>
+  
+<br/>
+
+    <div class="container" id="main">
+        <div class="contact-section">
+            <h2 class="ct-section-head">
+                                CONTACT US
+                            </h2>
+            <div class="row contact-fields">
+              <div class="col-md-8 left-form">
+              <form method="post" action="">
+                    <div class="form-group">
+                        <label class="sr-only" for="fname">First Name *</label>
+                        <input class="required form-control" id="fname" name="fname" placeholder="First Name&nbsp;*" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="lname">Last Name *</label>
+                        <input class="required form-control" id="lname" name="lname" placeholder="Last Name&nbsp;*" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="contactEmail">Email *</label>
+                        <input class="required form-control h5-email" id="contactEmail" name="contactEmail" placeholder="Email&nbsp;*" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="contactPhone">Phone *</label>
+                        <input class="required form-control h5-phone" id="contactPhone" name="contactPhone" placeholder="Phone&nbsp;*" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="comment">Type your message here</label>
+                        <textarea class="required form-control" id="comment" name="comment" placeholder="Type your message here&nbsp;*" rows="6"></textarea>
+                    </div>
+                        <button class="btn btn-accent" type="submit">Submit</button>  
+              </form>
+                    </div>
+                <div class="col-md-4 contact-info">
+                    <div class="phone">
+                        <h2>Call</h2>
+                        <a href="tel:+4046872730">888888888</a>
+                    </div>
+                    <div class="email">
+                        <h2>Email</h2>
+                        <a href="mailto:info@decidedekalb.com">abc@gmail.com</a>
+                    </div>
+                    <div class="location">
+                        <h2>Visit</h2>
+                        <p>One Town Center </br>
+                            123 Easy Street </br>
+                            Suite 1000 </br>
+                            Orlando, FL 32803
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+                    <div class="fixed-footer">
+                
+
+                        <button type="button"  class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#example-modal" id="sign-in-button" > contact_us </button>
+                        <div class="modal fade" id="example-modal"  tabindex="-1" aria-labelledby="modal-header"  aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="modal-header">Thank you for reaching out.</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form>
+                        <div class="form-floating mb-3" >
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating" >
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Feedback</label>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >  Close </button>
+                           </div>
+                        </form>
+                                </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div id="Social_Media">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\facebook.png"  id="facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\instagram.png"  id="instagram"></a>
+                        <a href="https://twitter.com"  target="_blank" rel="noopener noreferrer"> <img src="assests\images\twitter.png"   id="twitter"></a>
+                        </div>
+                        <div id="phrase"><p> C 2020 Hotel Booking PVT LTD.</p></div>        
+                        </div>
+                          
+                 
+
+  </body>
+</html>
+
+
+  
+  
