@@ -21,7 +21,8 @@
     .register-photo form {
     display: table-cell;
     width: 500px;
-    background-color: rgb(143, 134, 134);
+    background-color: rgb(163, 122, 122);
+    border: 1px solid black;
     padding: 20px 40px 20px 26px;
     color: black;
     }

@@ -7,6 +7,7 @@
 
   .Search
 {
+
     width: 100vw;
     height: 380px;
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
@@ -19,12 +20,43 @@
     justify-content: center;
     padding-top: 10%;
     background-color: #f1f1f1;
+
 }
-#searchbar
-{
-    width: 250px;
-    height: 55px;
+.button5{
+    margin-top: 8px;
 }
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example .button5 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example .button5:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
 /* From cssbuttons.io by @alexmaracinaru */
 .cta {
@@ -59,7 +91,8 @@
     padding-bottom: 20px;
    }
    
-   .hover-underline-animation:after {
+   .hover-underline-animation:after 
+   {
     content: "";
     position: absolute;
     width: 100%;
