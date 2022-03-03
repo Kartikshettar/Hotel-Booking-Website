@@ -11,30 +11,37 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"  rel="stylesheet" 
    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"  crossorigin="anonymous"/>
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
    <body>
     <div class="fixed-header">
-      <div class="container">
-        
-           
-        <a href="index.html"> <img src="assests\images\logo.png" id="Logo" alt="logo"></a>   <!--Image to show as logo in header-->
-        <div class="main_div">
-          <button  onclick="window.location.href='login.html'">Sign In</button>
+      <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+          <a href="index.html"> <img src="assests\images\logo.png" width="95" height="95" alt="logo"></a>
+          
+          <nav class="nav">
+          <div class="main_div">
+            <button  onclick="window.location.href='login.html'">Sign In</button>
+          </div>
+        </nav>
         </div>
-
-                    
-      </div>
-  </div>
+      </header>
+        </div>
   
   
             <div class="Search" >                <!--Search Bar section -->
               
                     <nav>
-                      
+
+              
                         <div class="container-fluid">
                           <form class="d-flex">
-                            <input class="form-control me-2" id="searchbar" type="search" placeholder="CITY" aria-label="Search">
+                            <input class="form-control me-md-3" id="searchbar" type="search" placeholder="CITY" aria-label="Search">
                             <button class="cta">
                               <span class="hover-underline-animation"> Search </span>
                               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
@@ -43,28 +50,88 @@
                             </button>
                          
                           </form>
-                        </div>
+                        </div> 
+
+
                       </nav>
                    
                 
             </div>
 
-            <div class="outer-grid">              <!--Container to display the cards contains different images of destination -->
+            <div >              <!--Container to display the cards contains different images of destination -->
                 <nav>
+                  <div class="container1">
+         
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                      </ol>
                   
-                    
-                   <div class="grid"> 
-                     <a href="list.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" id="Delhi" alt="Delhi"></a>
-                    
-                    
-                   <a href="list.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="Goa" alt="Goa"></a>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                  
+                        <div class="item active">
+                         <a href="list.html"> <img src="https://c0.wallpaperflare.com/preview/576/99/716/india-new-delhi-government-parliament-thumbnail.jpg" alt="Los Angeles" style="width:100%; height:500px;"></a>
+                          <div class="carousel-caption">
+                            <h3>Jaipur</h3>
+                            <p>Pink cityyyy!</p>
+                          </div>
+                        </div>
 
-                  <a href="list.html">   <img src ="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" id="Hyderabad" alt="Hyderabad"></a>
+
+                        <div class="item ">
+                          <a href="list.html"> <img src="https://c0.wallpaperflare.com/preview/308/232/8/amber-fort-fort-jaipur-rajasthan.jpg" alt="Los Angeles" style="width:100%; height:500px;"></a>
+                           <div class="carousel-caption">
+                             <h3>Delhi</h3>
+                             <p>Smoke is clear!</p>
+                           </div>
+                         </div>
                         
-                   <a href="list.html">   <img src ="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" id="kolkata" alt="kolkata"></a>
-                   
 
+
+                  
+                        <div class="item">
+                          <a href="list.html"> <img src="https://media.gettyimages.com/photos/scenic-view-of-sea-against-sky-during-sunset-picture-id960843296?k=20&m=960843296&s=612x612&w=0&h=DaJahHiRG8byQNoq62y-Ewtg_rXuMRvj6xe9B9Kh0hQ=" alt="Chicago" style="width:100%;height:500px"></a>
+                          <div class="carousel-caption">
+                            <h3>Goa</h3>
+                            <p>Goa is always so much fun!</p>
+                          </div>
+                        </div>
+                      
+                        <div class="item">
+                          <a href="list.html"><img src="https://c0.wallpaperflare.com/preview/486/854/429/hyderabad-india-golconda-fort-panorama.jpg" alt="New york" style="width:100%;height:500px"></a>
+                          <div class="carousel-caption">
+                            <h3>Hyderabad</h3>
+                            <p>We love Briyani!</p>
+                          </div>
+                        </div>
+                    
+                  
+                        <div class="item">
+                          <a href="list.html"> <img src="https://c4.wallpaperflare.com/wallpaper/801/130/433/howrah-bridge-kolkata-wallpaper-preview.jpg" alt="Kolkata" style="width:100%; height:500px"></a>
+                          <div class="carousel-caption">
+                            <h3>Kolkata</h3>
+                            <p>We love the sweets!</p>
+                          </div>
+                        </div>
                       </div>
+                  
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
                       
 
                 
@@ -76,25 +143,22 @@
             </nav>
             <br/>
             </div>
+         
  
-  <div class="fixed-footer">
-                  
-
-    <button onclick="window.location.href='contact.html'" class="button3" style="width:auto;"><span>Contact Us</span></button>
-
-
-
-
-
-
-
-   <div id="Social_Media">
-   <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\facebook.png"  id="facebook"></a>
-   <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\instagram.png"  id="instagram"></a>
-   <a href="https://twitter.com"  target="_blank" rel="noopener noreferrer"> <img src="assests\images\twitter.png"   id="twitter"></a>
-  </div>
-  <div id="phrase"><p> C 2020 Hotel Booking PVT LTD.</p></div>        
-  </div>
+            <div class="fixed-footer">
+              <footer class="site-footer">
+                <div class="wrapper site-footer_wrapper">
+                  <button onclick="window.location.href='contact.html'" class="button3" style="width:auto;"><span>Contact Us</span></button>
+                  <div id="Social_Media">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\facebook.png"  id="facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\instagram.png"  id="instagram"></a>
+                    <a href="https://twitter.com"  target="_blank" rel="noopener noreferrer"> <img src="assests\images\twitter.png"   id="twitter"></a>
+                   </div>
+                   <div id="phrase"><p> C 2020 Hotel Booking PVT LTD.</p></div>
+                </div>
+        
+              </footer>
+            </div>
 
    </body>
   </html>

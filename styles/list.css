@@ -1,54 +1,31 @@
 
 
 
-#Views
+ #Views
 {
-    margin: 2%;
+    margin: 4%;
     justify-content: space-between;
-}
+} 
 body{
     margin: 0%;
+   
     background-color: #e0e0e0;
 }
-
-
-
-
-#hotel1
-{
-    background-color: rgb(132,136,139);
-    margin: 2%;
-    width: 40%;
+.container1 {
+    margin: 4%;
+   padding-right: 20px;
+    display: flex;
+    max-width: fit-content;
+    background-color: gray;
+   align-items: center;
+   
+}
+.container__image {
+   margin-right: 20px;
+    width: 650px;
+    object-fit: contain;
+    align-self: flex-start;
 }
 
-#hotel2
-{
-    background-color: rgb(132,136,139);
-    margin: 2%;
-    width: 40%;
-}
-#hotel3
-{
-    background-color: rgb(132,136,139);
-    margin: 2%;
-    width: 40%;
-}
 
-#hotelImg1
-{
-    border-radius: 0;
-    width: 350px;
 
-}
-#hotelIMG2
-{
-    border-radius: 0;
-    width: 350px;
-
-}
-#hotelIMg3
-{
-    border-radius: 0;
-    width: 350px;
-
-}
