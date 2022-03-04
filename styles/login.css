@@ -23,7 +23,9 @@
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-  a:focus, a:hover,
+
+  a:focus,
+  a:hover,
   a:link:focus,
   a:link:hover,
   a:visited:focus,
@@ -35,6 +37,8 @@
     transition: all 0.2s ease;
   }
   
+
+  /* login form styling for input box and validations  */
   #login-form-wrap {
     background-color: #fff;
     width: 35%;
@@ -154,6 +158,9 @@
     padding: 10px 0;
     border-radius: 0 0 4px 4px;
   }
+
+
+  
  #login-form-wrap
  {
      margin-top: 4%;
