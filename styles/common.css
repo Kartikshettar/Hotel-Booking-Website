@@ -37,7 +37,8 @@ input[type=text], input[type=password] {
   transition: all 0.1s;
   }
 
-  .button1:hover, .button1:active {
+  .button1:hover, 
+  .button1:active {
     -webkit-transform: translate(0px,5px);
     -ms-transform: translate(0px,5px);
     transform: translate(0px,5px);
@@ -141,8 +142,7 @@ span.psw {
 
 
 
-#phrase
-{
+#phrase {
    
    text-align: center;
    font-weight: bold ;
@@ -152,9 +152,8 @@ span.psw {
 
 
 
-
-  #Social_Media
-  {
+/* social media div visible on right side of footer */
+  #Social_Media {
       float: right;
       margin-top: 10px;
       margin-right: 2%;
@@ -163,34 +162,30 @@ span.psw {
 
 
 
-  
-#facebook
-{
+  /* sizing and styling the social media images */
+#facebook {
     height: 30px;
     width: 32px;
     border-radius: 50%;
 }
-#instagram
-{
+#instagram {
     height: 30px;
     width: 32px;
     border-radius: 50%;
 }
-#twitter
-{
+#twitter {
     height: 35px;
     width: 37px;
     border-radius: 50%;
 }
 
-.container{
+.container {
     width: 80%;
-    margin: 0 auto; /* Center the DIV horizontally */
+    margin: 0 auto;
 }
 
-
-#Logo                            /* styling code for logo in the header*/
-{
+ /* styling code for logo in the header*/
+#Logo    {
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
@@ -198,7 +193,7 @@ span.psw {
     
 }
 
-
+   /* main_div is the 'SignIn 'button div  and below is the code for sizing and styling for the button*/
 .main_div {
  
   --color: #3992e6;
@@ -258,37 +253,36 @@ span.psw {
   font-family: inherit;
  }
 
-
-.fixed-header, .fixed-footer{
+/* code for determing the position for header and footer*/
+.fixed-header,
+ .fixed-footer {
     width: 100%;
     position: fixed;        
     background: #8a0000;
     color: #fff;
 }
-.fixed-header{
+.fixed-header {
     top: 0;
 }
-.fixed-footer{
+.fixed-footer {
     bottom: 0;
 }    
-
-.site-header__wrapper
-{
+/*Applying css for header and footer container*/
+.site-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.site-footer_wrapper 
-{
+.site-footer_wrapper {
   height: fit-content;
 
 }
 
-
+/*button3 is for styling button 'contact us'*/
 
 .button3 {
-  margin-top: 10px;
-  margin-left: 5px;
+ margin-top: 10px;
+margin-left: 5px;
 position: relative;
 height: 45px;
 margin-left: 2%;
@@ -302,7 +296,9 @@ white-space: nowrap;
 transition: all .05s linear;
 font-family: inherit;
 }
-.button3:before, .button3:after {
+
+.button3:before, 
+.button3:after {
 content: "";
 position: absolute;
 background: #000;
@@ -346,5 +342,12 @@ font-size: 15px;
 z-index: 3;
 position: relative;
 font-weight: 600;
+}
+
+
+/* for applying color to starts used for rating hotel */
+
+.checked {
+  color: orange;
 }
 

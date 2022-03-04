@@ -1,42 +1,35 @@
 
   
 
-#hotelDec
-{
-    background-color: rgb(132,136,139);
-    margin-top: 4%;
-    margin-bottom: 2%;
-    width: 50%;
-    height: 20%;
-    margin-left: 20%;
 
-    
-}
-
-#hotel1
-{
+/* sizing hotel image */
+#hotel1 {
     height: 500px;
     width: 400px;
 }
 
+/* styling the text iunformation */
 #payInfo
 {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu";
     margin-left: 20px;
 
 }
 
+/* conatiner conatins final breakdown of the amount and pay now option*/
 #payDec
 {
+    font-family: "Ubuntu";
     width:70%;
     border:1px solid #000;
     background-color: rosybrown;
     border-radius: 12px;
     margin : 2% 1% 2% 12%;
     padding:1% 2% ;
-    font-family: "Ubuntu", sans-serif;
+   
 }
 
+/* image and information container */
 .container1 {
     margin: 4% 4% 0 25%;
     
@@ -54,10 +47,10 @@
     align-self: flex-start;
 }
 
-
+/* pay now button styling , sizing and animation  */
 .cta {
     position: relative;
-    margin: 3% 4% 9% 5%;
+    margin: 4% 2% 11% 5%;
     padding: 12px 0 12px 18px;
     transition: all 0.2s ease;
     border: none;

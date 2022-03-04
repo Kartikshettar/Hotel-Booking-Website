@@ -1,12 +1,13 @@
 
 
-
- #Views
-{
+/* spacing and alignment for collpase buttons */
+ #Views {
     margin: 4%;
     justify-content: space-between;
 } 
 
+
+/* spacing and alignment for image collapse containers */
 .container1 {
     margin: 4%;
    padding-right: 20px;
@@ -16,6 +17,7 @@
    align-items: center;
    
 }
+
 .container__image {
    margin-right: 20px;
     width: 650px;

@@ -1,120 +1,373 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:900);
+/**
+  * style variables
+*/
+/**
+  * Control & indicator mixin
+*/
+.carousel {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  list-style: none;
 
+/**
+    * Control element - right/left arrows
+  */
+/**
+    * Element for holding slide indicators
+  */
+/**
+    * Indicator for indicating active slide
+  */
+/**
+    * Create rules for when slides are contained within a track
+  */
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  opacity: 0.35;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 10px;
+  transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 10px;
+  transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.carousel__track .carousel__slide:nth-of-type(1) {
+  transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2) {
+  transform: translateX(100%);
+}
+.carousel__track .carousel__slide:nth-of-type(3) {
+  transform: translateX(200%);
+}
+.carousel__track .carousel__slide:nth-of-type(4) {
+  transform: translateX(300%);
+}
+.carousel__track .carousel__slide:nth-of-type(5) {
+  transform: translateX(400%);
+}
+.carousel--scale .carousel__slide {
+  transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  opacity: 0;
+}
+/**
+  * Theming
+*/
+* {
+  box-sizing: border-box;
+}
 
+html,
+.carousel-container {
+  display: inline-block;
+}
 
-.register-photo {
+.my-carousel {
+  border-radius: 5px;
+  margin: 30px;
+}
 
-    padding: 80px 0;
-    }
-    .register-photo .image-holder {
-    display: table-cell;
-    width: 65%;
-    background: url(https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg);
-    background-size: cover
-    }
-    .register-photo .form-container {
-    display: table;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
-    }
-    .register-photo form {
-    display: table-cell;
+.carousel__slide {
+  overflow: hidden;
+}
+
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -25px;
+}
+
+h3 {
+  color: #fafafa;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+.carousel__indicator {
+  background-color: #fafafa;
+}
+
+.carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2eBxB-FdPySfLRcyBQXimvN7da0UiP6PyQ&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("https://media.istockphoto.com/photos/interior-of-a-modern-luxury-hotel-double-bed-bedroom-picture-id1163498940?b=1&k=20&m=1163498940&s=170667a&w=0&h=5TRSRlxZVnU_hVpPTjcbok7xg8Zrl4gmntmkyuAKVSM=");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-image: url("https://media.istockphoto.com/photos/beautiful-tropical-beach-front-hotel-resort-with-swimming-pool-picture-id641448082?b=1&k=20&m=641448082&s=170667a&w=0&h=4epg39cbWQi5yzEZOgF_O_hsQs1iwpI0yiUJo_5mi5Y=");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-image: url("https://media.istockphoto.com/photos/luxury-hotel-lobby-with-smart-robots-working-as-a-receptionist-and-picture-id1298838328?b=1&k=20&m=1298838328&s=170667a&w=0&h=AkVWfkqsvZfQAfQZkNdPfO69rMHFqh78ZrSEujr20Yg=");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-image: url("https://media.istockphoto.com/photos/reception-area-with-reception-desk-in-gym-fitness-center-picture-id1292365750?b=1&k=20&m=1292365750&s=170667a&w=0&h=2Z1ZfG5P_l0_HrKJyUB0iIYQjlF8SJs_tRv3EsexHqE=");
+  background-size: cover;
+  background-position: center;
+}
+
+.flex-container {
+    display: flex;
+    border: 2px solid black;
+    margin: 3%;
+    background-color: rosybrown;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid rgb(14, 10, 6);
     width: 500px;
-    background-color: rgb(163, 122, 122);
-    border: 1px solid black;
-    padding: 20px 40px 20px 26px;
-    color: black;
-    }
-    @media (max-width:991px) {
-    .register-photo form {
-    padding: 40px
-    }
-    }
-    .register-photo form h2 {
-    font-size: 24px;
-    line-height: 1.5;
-    margin-bottom: 30px
-    }
-    .register-photo form .form-control {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #dfe7f1;
-    border-radius: 0;
-    box-shadow: none;
-    outline: none;
-    color: inherit;
-    text-indent: 0px;
-    height: 40px
-    }
-    .register-photo form .form-check {
-    font-size: 13px;
-    line-height: 20px
-    }
-    .register-photo form .btn-primary {
-    background: green;
-    border: none;
-    border-radius: 4px;
-    padding: 11px;
-    box-shadow: none;
-    margin-top: 35px;
-    text-shadow: none;
-    outline: none !important
-    }
-    .register-photo form .btn-primary:hover,
-    .register-photo form .btn-primary:active {
-    background: green
-    }
-    .register-photo form .btn-primary:active {
-    transform: translateY(1px)
-    }
-    .register-photo form .already {
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    color: #6f7a85;
-    opacity: 0.9;
-    text-decoration: none
-    }
-    
-    
-    
-    .form-container .form-control::-webkit-input-placeholder {
-      color: rgba(12, 4, 4, 0.5)
+    margin: 2%;
+    padding: 20px 20px 20px 40px;
+}  
+
+
+/* button4 is for styling amnd sizing  book now button  */
+.button4 {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        margin: 0% 2% 2% 50%;
+       }
        
-    }
+      .button4:hover {
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+       }
+       
+       .button4:active {
+        transform: translateY(-1px);
+       }
+
+       
+.button4 {
+padding: 1.3em 3em;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+margin: 2% 2% 2% 10%;
+}
+/* animation for button book now */
+
+.button4:hover {
+background-color: #2EE59D;
+box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+color: #fff;
+transform: translateY(-7px);
+}
+
+.button4:active {
+transform: translateY(-1px);
+}
     
-    .form-container .form-control:-ms-input-placeholder {
-        color: rgba(12, 4, 4, 0.5)
-    }
-    
-    .form-container .form-control::placeholder {
-      color: rgba(12, 4, 4, 0.5)
-    }
-    
-    
-    
-    
-    
-    .form-container .form-header {
-        text-align: center;
-        
-        margin-bottom: 30px ;
-        border: 1px solid black;
-        background-color: #91a4b6;
-        border-radius: 5px;
-    }
-    
-    .form-container .form-header h1 {
-        font-weight: 700;
-        text-transform: capitalize;
-        font-size: 42px;
-        margin: 0px;
-        color: rgb(34, 2, 2)
-    }
-    
-    
-    #discription
+/* aligning discription part */
+  #discription
     {
         margin-top: 2%;
         margin-left: 4%;
@@ -127,32 +380,3 @@
 
 
 
-
-    .button4 {
-        
-            padding: 1.3em 3em;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            font-weight: 500;
-            color: #000;
-            background-color: #fff;
-            border: none;
-            border-radius: 45px;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease 0s;
-            cursor: pointer;
-            outline: none;
-            margin: 2%;
-           }
-           
-          .button4:hover {
-            background-color: #2EE59D;
-            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-            color: #fff;
-            transform: translateY(-7px);
-           }
-           
-           .button4:active {
-            transform: translateY(-1px);
-           }

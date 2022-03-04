@@ -9,13 +9,18 @@
  <link href="styles\common.css" rel="stylesheet" />
  <link href="styles\detail.css" rel="stylesheet" />
 
+ <!-- bootstrap scripts and stylesheets for booking form -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- ubuntu fomnt family stylesheet -->
  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
- <body>
-   
 
 
+<body  style="background-color: #e0e0e0;">     <!--inline styling because of reboot.scss is overriding -->
+<!-- header part -->
         <div class="fixed-header">
           <header class="site-header">
             <div class="wrapper site-header__wrapper">
@@ -29,95 +34,118 @@
             </div>
           </header>
             </div>
+
+       
+            <div class="flex-container">      <!-- contaihner that wraps carous3el and booking form -->
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        <div class="register-photo">
-          <div class="section-center">
-            <div class="container">
-                <div class="row">
-          <div class="form-container">
-          <div class="image-holder"></div>
-          <form method="post">
-            <div class="form-header">
-              <h1>Make your reservation</h1>
-          </div>
-              <div class="form-group"> <input class="form-control" type="text" placeholder="Country, ZIP, city..."> <span class="form-label">Destination</span> </div>
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Check In</span> </div>
-                  </div>
-                  <div class="col-md-6" style="float: right;">
-                      <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Check out</span> </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-4">
-                      <div class="form-group"> <select class="form-control" required>
-                              <option value="" selected hidden>no of rooms</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                      </select> <span class="select-arrow"></span> <span class="form-label">Rooms</span>
-      
-                           </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-group"> <select class="form-control" required>
-                              <option value="" selected hidden>no of adults</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                          </select> <span class="select-arrow"></span> <span class="form-label">Adults</span> </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-group"> <select class="form-control" required>
-                              <option value="" selected hidden>no of children</option>
-                              <option>0</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                          </select> <span class="select-arrow"></span> <span class="form-label">Children</span> </div>
-                  </div>
-                  <br/>
-              </div>
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email"> <span class="form-label" >Email</span> </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group"> <input class="form-control" type="tel" placeholder="Enter you Phone"> <span class="form-label">Phone</span> </div>
-                  </div>
-              </div>
-              <div class="col-md-2">
-                <label class="input-group-sm" class="form-label">Total :<input class="form-control" type="text" placeholder="Rs.25000" readonly></labelclass>
+        
+              <div class="carousel-container">      <!--   carousel container -->
                 
-              </div>
-             
-          </form>
-          </div>
-          </div> 
+                <div class="carousel my-carousel carousel--translate"><input class="carousel__activator" type="radio" name="carousel" id="HOTEL" checked="checked" /><input class="carousel__activator" type="radio" name="carousel" id="BEDROOM" /><input class="carousel__activator" type="radio" name="carousel" id="POOL" /><input class="carousel__activator" type="radio" name="carousel" id="LOOBY" /><input class="carousel__activator" type="radio" name="carousel" id="DOORWAY" />
+                    <div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="DOORWAY"></label><label class="carousel__control carousel__control--forward" for="BEDROOM"></label></div>
+                    <div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="HOTEL"></label><label class="carousel__control carousel__control--forward" for="POOL"></label></div>
+                    <div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="BEDROOM"></label><label class="carousel__control carousel__control--forward" for="LOOBY"></label></div>
+                    <div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="POOL"></label><label class="carousel__control carousel__control--forward" for="DOORWAY"></label></div>
+                    <div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="LOOBY"></label><label class="carousel__control carousel__control--forward" for="HOTEL"></label></div>
+                    <div class="carousel__track">
+                        <li class="carousel__slide">
+                            <h1>HOTEL</h1>
+                        </li>
+                        <li class="carousel__slide">
+                            <h1>BEDROOM</h1>
+                        </li>
+                        <li class="carousel__slide">
+                            <h1>POOL</h1>
+                        </li>
+                        <li class="carousel__slide">
+                            <h1>LOOBY</h1>
+                        </li>
+                        <li class="carousel__slide">
+                            <h1>DOORWAY</h1>
+                        </li>
+                    </div>
+                    <div class="carousel__indicators"><label class="carousel__indicator" for="HOTEL">
+            
+                    </label><label class="carousel__indicator" for="BEDROOM">
+            
+                    </label><label class="carousel__indicator" for="POOL">
+            
+            
+                    </label><label class="carousel__indicator" for="LOOBY">
+            
+                    </label><label class="carousel__indicator" for="DOORWAY"></label>
+                  </div>
+                </div>
+            
+            
             </div>
-          </div></div>
+            <div class="flex-child ">        <!--   child container contains form  -->
+              <div id="booking" class="section">
+                <div class="section-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="booking-form">
+            
+                                <form>
+                                    <div class="col-md-3"> <input class="form-control" type="text" placeholder=" city..."> <span class="form-label">Destination</span> </div>
+                                    <div class="row">
+                                       <div class="col-md-2">
+                                          <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Check In</span> </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Check out</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group"> <select class="form-control" required>
+                                                    <option value="" selected hidden>no of rooms</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select> <span class="select-arrow"></span> <span class="form-label">Rooms</span> </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group"> <select class="form-control" required>
+                                                    <option value="" selected hidden>no of adults</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select> <span class="select-arrow"></span> <span class="form-label">Adults</span> </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group"> <select class="form-control" required>
+                                                    <option value="" selected hidden>no of children</option>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select> <span class="select-arrow"></span> <span class="form-label">Children</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email"> <span class="form-label">Email</span> </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group"> <input class="form-control" type="tel" placeholder="Enter you Phone"> <span class="form-label">Phone</span> </div>
+                                        </div>
+                                    </div>
+                                    <button  onclick="window.location.href='Payment.html'"  class="button4"> Book Now
+                                        <span></span>
+                                      </button>
+                                      <br/>  <br/>
+                                </form>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                     
+            
+            
+              </div>
       
       
       
@@ -126,10 +154,32 @@
       
       
       
-          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+           <!-- discription about hotel -->
       
           <div id="discription"><h3>Radisson Blu Hotel</h3>
-            <p>Rating: 5 star</p>
+            
+            &starf;
+            &starf;
+            &bigstar;
+            &starf;
+            &bigstar;
+
             <ul>
                 <li>Room Service</li>
                 <li>Resturant</li>
@@ -138,15 +188,8 @@
                 <li>Swimimg pool</li>
                 <li>Cab service</li>
             </ul>
-      
-          
-         
-          
-              <button  onclick="window.location.href='Payment.html'"  class="button4"> Book Now
-                <span></span>
-              </button>
-            
-           <br/>
+            <h2>Description</h2>
+            <p>On entering this charming hotel in Florence, you will immediately sense its special intimate atmosphere that makes you feel like being in your own florentine home.  Each detail has been passionately chosen and each room deserves a visit. Hotel Cellai style mixes valuable antiques and original artworks with an unexpected eclectic contemporary twist. The entire House recalls the ancient ‘Palazzi’  of times past where young European aristocrats lived while discovering the beauty and the artistic mysteries.</p>
         </div>
       
       
@@ -157,7 +200,7 @@
       
       
       
-      
+      <!-- footer part -->
         <div class="fixed-footer">
             <footer class="site-footer">
               <div class="wrapper site-footer_wrapper">
@@ -172,33 +215,6 @@
       
             </footer>
           </div>
-      
-
-
-
-
-
-
-
-
-
-            <div class="fixed-footer">
-                <footer class="site-footer">
-                  <div class="wrapper site-footer_wrapper">
-                    <button onclick="window.location.href='contact.html'" class="button3" style="width:auto;"><span>Contact Us</span></button>
-                    <div id="Social_Media">
-                      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\facebook.png"  id="facebook"></a>
-                      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <img src="assests\images\instagram.png"  id="instagram"></a>
-                      <a href="https://twitter.com"  target="_blank" rel="noopener noreferrer"> <img src="assests\images\twitter.png"   id="twitter"></a>
-                     </div>
-                     <div id="phrase"><p> C 2020 Hotel Booking PVT LTD.</p></div>
-                  </div>
-          
-                </footer>
-              </div>
-  
-          
-  
 </body>
 </html>
 

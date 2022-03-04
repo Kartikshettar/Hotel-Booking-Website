@@ -1,12 +1,12 @@
-
-#more_cards
-{
+/* view more cities  */
+#more_cards {
     text-align: center;
     margin-top: 0;
 }
 
-  .Search
-{
+
+/* styling and sizing the search bar container*/
+  .Search {
 
     width: 100vw;
     height: 380px;
@@ -22,11 +22,13 @@
     background-color: #f1f1f1;
 
 }
-.button5{
+
+/* styling for search bar submit button */
+.button5 {
     margin-top: 8px;
 }
-
-form.example input[type=text] {
+/* styling for search bar  input area*/
+form.search input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -34,8 +36,9 @@ form.example input[type=text] {
     width: 80%;
     background: #f1f1f1;
   }
-  
-  form.example .button5 {
+
+  /* styling for search bar submit button */
+  form.search .button5 {
     float: left;
     width: 20%;
     padding: 10px;
@@ -46,71 +49,21 @@ form.example input[type=text] {
     border-left: none;
     cursor: pointer;
   }
-  
-  form.example .button5:hover {
+
+
+  /* animation for search bar submit button */
+  form.search .button5:hover {
     background: #0b7dda;
   }
   
-  form.example::after {
+  form.search::after {
     content: "";
     clear: both;
     display: table;
   }
 
 
-/* From cssbuttons.io by @alexmaracinaru */
-.cta {
-    border: none;
-    background: none;
-   }
-   
-   .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 20px;
-    padding-right: 15px;
-    text-transform: uppercase;
-   }
-   
-   .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-   }
-   
-   .cta:hover svg {
-    transform: translateX(0);
-   }
-   
-   .cta:active svg {
-    transform: scale(0.9);
-   }
-   
-   .hover-underline-animation {
-    position: relative;
-    color: black;
-    padding-bottom: 20px;
-   }
-   
-   .hover-underline-animation:after 
-   {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-   }
-   
-   .cta:hover .hover-underline-animation:after 
-   {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-   }
-   
+
 
 
 
